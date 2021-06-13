@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="student.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet"/> -->
+
+    <title>Document</title>
+</head>
+<body>
+      <div class="container-student-main">
+        <div class="container-student">
+            <img src="" width="400" height="400" style="border-radius: 200px;" alt="" id="avatar">
+              <a id="tab-student-name"></a>
+              <a id="tab-student-language" style="font-size: 1ch; color: rgb(14, 13, 13);">Studies </a>
+          </div>
+
+          <div class="row container-student-status2">
+            <div class="col-12 cont">
+              <div class="comp col-2"  style=" background-color: rgb(219, 153, 29);">
+                <div class="im">
+                  <span class="material-icons" style="font-size: 55px; color:#264653">paid</span>
+                 </div>
+                <div class="sub">
+                  <div id="deptToday" class="row-value">1</div>
+                  <div class="row-name">Dept Today</div>
+                </div>
+              </div>
+              <div class="comp col-2">
+                <div class="im">
+                  <span class="material-icons" style="font-size: 55px; color:#264653">trending_up</span>
+                 </div>
+                <div class="sub">
+                  <div id="deptMonth" class="row-value"></div>
+                  <div class="row-name">Dept Month</div>
+                </div>
+              </div>
+              <div class="comp col-2" style=" background-color: rgb(129, 215, 226);">
+                <div class="im">
+                  <span class="material-icons" style="font-size: 55px; color:#264653">trending_up</span>
+                 </div>
+                <div class="sub">
+                  <div id="MonthPay" class="row-value"></div>
+                  <div class="row-name">Month Pay</div>
+                </div>
+              </div>
+              <div class="comp col-2" style=" background-color: rgb(23, 190, 135);">
+                <div class="im">
+                  <span class="material-icons material-icons2" style="font-size: 55px; color:#264653">pending</span>
+                </div>
+                <div class="sub">
+                  <div id="remainingPay" class="row-value"></div>
+                  <div class="row-name">Remaining Pay</div>
+                </div>
+              </div>
+              <div class="comp col-2" style="background-color: rgb(236, 63, 11);">
+                <div class="im">
+                  <span class="material-icons" style="font-size: 55px; color:#264653">savings</span>
+                </div>
+                <div class="sub">
+                  <div id="payed" class="row-value" style="color: white;">1</div>
+                  <div class="row-name" style="color: white;">Payed</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+  
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add new Session</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form id="formAddStudent">
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label" style="text-align: left;">First Name:</label>
+                    <input type="text" class="form-control" class="col-form-label" id="firstName">
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Phone Number:</label>
+                    <input type="text" class="form-control" id="phoneNumber">
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Email:</label>
+                    <input type="text" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Age:</label>
+                    <input type="text" class="form-control" id="age">
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Data of Birth:</label>
+                    <input type="text" class="form-control" id="dateOfBirth">
+                  </div>
+                  Gender <br>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="Male" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        Male
+                      </label>
+                  </div>
+        
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="Female">
+                      <label class="form-check-label" for="exampleRadios2">
+                        Female
+                      </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">CNP:</label>
+                    <input type="text" class="form-control" id="cnp">
+                  </div>
+                  <div class="modal-footer">
+                    <div class="col-sm-10">
+                        <button id="addPerson" type="submit"  class="btn btn-primary">Add person</button>
+                    </div>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-custom">
+        <div id="newstudent">
+          <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModal"  >Add new student</button>
+        </div>
+      </div>
+
+      <div>
+        <div >
+          <h1 style="text-align: center;">Student status curent month</h1>
+        </div>
+      
+        <div class="container-student-center">
+            <table id="tab-student-1" class="table">
+              <tr>
+                <th style="text-align: center;">Id</th>
+                <th style="text-align: center;">Date</th>
+                <th style="text-align: center;">Duration</th>
+                <th style="text-align: center;">Language</th>
+                <th style="text-align: center;">Hour Price</th>
+                <th style="text-align: center;">Payment</th>
+                <th style="text-align: center;">Amount</th>
+                <th style="text-align: center;">Actions</th>
+              </tr> 
+              <tbody id="tablestudent"></tbody>
+            </table>
+        </div>
+      
+        <div>
+          <h3  style="text-align: center;">Pick Month/Year <input type="text" class="form-control" name="datepicker" id="datepicker" style="width: 200px;"> </h3>
+        </div>
+      
+      
+        <div>
+          <h2 style="text-align: center;">Status Sessions selected month</h2>
+        </div>
+      
+        <div class="container-student-center">
+          <table class="table">
+            <tr>
+              <th style="text-align: center;">Id</th>
+              <th style="text-align: center;">Date</th>
+              <th style="text-align: center;">Duration</th>
+              <th style="text-align: center;">Hour Price</th>
+              <th style="text-align: center;">Payment</th>
+              <th style="text-align: center;">Amount</th>
+              <th style="text-align: center;">Actions</th>
+            </tr>
+            <tbody style="text-align: center;" id="tableSelectedMonth"></tbody>
+          </table>
+      </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
+      
+      <script src="student.js"></script>
+      <script src="datapicker.js"></script>
+      <script src="/picturesdatabase.js"></script>
+</body>
+</html>

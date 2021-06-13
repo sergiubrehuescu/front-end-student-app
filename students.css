@@ -1,0 +1,68 @@
+.container-students, .container-students-center {
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.container-students h1{
+    border: 5px solid wheat;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 50px;
+    background-color:teal;
+    color: whitesmoke;
+}
+
+#table-students {
+    
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+
+#table-students a{
+    padding: 10px;
+    margin: 4px;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+#table-students button{
+    padding: 10px;
+    margin: 4px;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+#table-students td{
+    padding: 10px;
+    font-size: larger;
+    font-style: normal;
+    font-family: cursive;
+    color: black;
+    vertical-align: middle;
+}
+
+#table-students th{
+    padding: 10px;
+    font-size: larger;
+    font-style: normal;
+    font-family: cursive;
+    color: black;
+    vertical-align: middle;
+}
+
+.data-table2{
+    display: flex;
+}
+
+
+
+
+
+
+
+
